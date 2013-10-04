@@ -6,7 +6,7 @@
   "dependencies": {
     "ar-drone": "~0.2.1",
     "ejs": "~0.8.4",
-    "express": "~3.3.4",
+    "express": "~3.3.4"
   },
   "engines": {
     "node": "0.10.12",
