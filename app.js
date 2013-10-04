@@ -6,8 +6,6 @@ routes = require('./routes'),
 arDrone = require('ar-drone'),
 client  = arDrone.createClient();
 
-var app = module.exports = express.createServer();
-
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(app.router);
