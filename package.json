@@ -1,0 +1,15 @@
+{
+  "name": "nodecopter_voice",
+  "version": "0.0.1",
+  "description": "Speak to your nodecopter",
+  "main": "app.js",
+  "dependencies": {
+    "ar-drone": "~0.2.1",
+    "ejs": "~0.8.4",
+    "express": "~3.3.4",
+  },
+  "engines": {
+    "node": "0.10.12",
+    "npm": "1.2.30"
+  }
+}
