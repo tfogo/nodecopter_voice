@@ -1,7 +1,7 @@
 #!/usr/bin/nodemon
 
 var express = require('express'),
-app = express(),
+app = module.exports = express.createServer(),
 routes = require('./routes'),
 arDrone = require('ar-drone'),
 client  = arDrone.createClient();
@@ -9,7 +9,7 @@ client  = arDrone.createClient();
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(app.router);
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', routes.index);
 
